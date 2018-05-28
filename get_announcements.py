@@ -1,8 +1,10 @@
-# -*- coding: UTF-8 -*- 
+
+# coding: utf-8
 
 # In[1]:
 
 
+# -*- coding: UTF-8 -*- 
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -12,10 +14,11 @@ from selenium.webdriver import Chrome
 
 import time
 
+import csv
 import json
 
 
-# In[2]:
+# In[7]:
 
 
 driver = webdriver.Chrome('./chromedriver')
@@ -27,7 +30,7 @@ driver.get('https://dcpc.nctu.edu.tw')
 
 # EDIT: student ID here or enter in the browser
 inputUser = driver.find_element_by_name("txtAccount")
-inputUser.send_keys('0410834')
+inputUser.send_keys('XXXXXXX')
 
 
 # In[4]:
@@ -35,7 +38,14 @@ inputUser.send_keys('0410834')
 
 #EDIT: password here or enter in the browser
 inputPwd = driver.find_element_by_name("txtPwd")
-inputPwd.send_keys('PASSWORD')
+inputPwd.send_keys('PASSWD')
+
+
+# In[8]:
+
+
+login = driver.find_element_by_id("btnLoginIn")
+login.click()
 
 
 # In[5]:
