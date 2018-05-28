@@ -8,7 +8,7 @@ download chrome driver and specify path
 ## Edit
 * account (or type in the browser)
 * password (or type in the browser)
-* total number of announcement pages
+* !!! total number of announcement pages
 * the output json file name
 
 ## Run
